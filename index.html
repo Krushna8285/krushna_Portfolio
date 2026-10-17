@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- SEO & Social Meta Tags -->
+  <title>Krushna Rathod | Python Full Stack & RAG AI Developer</title>
+  <meta name="title" content="Krushna Rathod | Python Full Stack & RAG AI Developer" />
+  <meta name="description" content="Portfolio of Krushna Rathod - Python Full Stack Developer, Generative AI & RAG Engineer. Building with Python, FastAPI, React, ChromaDB, and LangChain." />
+  <meta name="keywords" content="Krushna Rathod, Python Full Stack Developer, RAG System, Generative AI, FastAPI, React, ChromaDB, LangChain, Portfolio" />
+  <meta name="author" content="Krushna Rathod" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="theme-upgrade.css" />
+</head>
+<body>
+  <canvas id="liveBg" aria-hidden="true"></canvas>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <!-- Ambient Soft Glow Background -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-brand" title="Krushna Rathod Portfolio">
+        <div class="brand-avatar-gem">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="brand-name-box">
+          <div class="brand-name-top">
+            <span class="brand-fname">KRUSHNA</span>
+            <span class="brand-lname gradient-text">RATHOD</span>
+            <span class="brand-pulse-dot"></span>
+          </div>
+          <span class="brand-tagline">Python Full Stack &bull; AI</span>
+        </div>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#rag-project" class="nav-link">RAG System</a></li>
+          <li><a href="#languages" class="nav-link">Languages</a></li>
+          <li><a href="#skills" class="nav-link">Tech Stack</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle Theme">
+            <i class="fa-solid fa-moon moon-icon"></i>
+            <i class="fa-solid fa-sun sun-icon"></i>
+          </button>
+          <a href="Krushna_Rathod_Resume.pdf" download="Krushna_Rathod_Resume.pdf" class="btn btn-sm btn-outline">
+            <i class="fa-solid fa-arrow-down-to-bracket"></i> Resume
+          </a>
+          <a href="https://wa.me/919322576780?text=Hi%20Krushna,%20I%20saw%20your%20Python%20Full-Stack%20portfolio!" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Left: Intro & Bio -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Available for Full-time Roles &amp; Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br />
+            <span class="gradient-text">Krushna Rathod</span>
+          </h1>
+
+          <div class="hero-typing-box">
+            <span class="typing-label">Role: </span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate <strong>Python Full Stack Developer</strong> and <strong>RAG / Generative AI Engineer</strong>. 
+            I build robust web backends with <strong>FastAPI &amp; Flask</strong>, reactive modern UIs with <strong>React</strong>, 
+            and intelligent, hallucination-free document retrieval systems with <strong>LangChain, ChromaDB &amp; Llama 3.2</strong>.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#rag-project" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-brain"></i> View Main RAG Project
+            </a>
+            <a href="Krushna_Rathod_Resume.pdf" download="Krushna_Rathod_Resume.pdf" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-file-pdf"></i> Download Resume
+            </a>
+            <a href="https://github.com/Krushna8285" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+
+          <!-- Social Links Strip -->
+          <div class="hero-social-links">
+            <span class="social-label">Quick Connect:</span>
+            <a href="https://linkedin.com/in/krushna-rathod-683a3a293" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Krushna8285" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:krushnanrathod123@gmail.com" class="social-icon-btn" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+919322576780" class="social-icon-btn" title="Call">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Clean, Attractive Photo Frame -->
+        <div class="hero-visual">
+          <div class="photo-card-wrapper">
+            <div class="photo-card-glow"></div>
+            <div class="photo-card">
+              <div class="photo-img-box">
+                <img src="profile.jpg" alt="Krushna Rathod - Python Full Stack Developer" class="profile-photo" />
+              </div>
+              <div class="photo-card-info">
+                <h3 class="photo-name">Krushna Rathod</h3>
+                <p class="photo-role">Python Full Stack &amp; AI Engineer</p>
+                <div class="photo-location">
+                  <i class="fa-solid fa-location-dot"></i> Chhatrapati Sambhaji Nagar, India
+                </div>
+              </div>
+            </div>
+
+            <!-- Sleek Tech Badges -->
+            <div class="float-badge badge-top-right">
+              <i class="fa-brands fa-python text-yellow"></i>
+              <span>Python Full Stack</span>
+            </div>
+            <div class="float-badge badge-bottom-left">
+              <i class="fa-solid fa-brain text-cyan"></i>
+              <span>RAG &amp; ChromaDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROGRAMMING LANGUAGES PROFICIENCY (User Focus) -->
+    <section class="section languages-section" id="languages">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-code"></i> Skill levels</span>
+          <h2 class="section-title">Programming <span class="gradient-text">Languages</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            My primary core programming languages and technical proficiency levels.
+          </p>
+        </div>
+
+        <!-- Clean, Attractive Language Level Cards -->
+        <div class="languages-grid">
+          <!-- Python -->
+          <div class="lang-card featured-lang">
+            <div class="lang-card-top">
+              <div class="lang-icon python-bg">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="lang-meta">
+                <div class="lang-title-row">
+                  <h3>Python</h3>
+                  <span class="lang-badge expert-badge">Advanced / 95%</span>
+                </div>
+                <p class="lang-specialty">FastAPI &bull; Flask &bull; OOP &bull; Pandas &bull; LangChain &bull; Scripts</p>
+              </div>
+            </div>
+            <div class="lang-bar-track">
+              <div class="lang-bar-fill" style="--level: 95%;"></div>
+            </div>
+            <div class="lang-card-bottom">
+              <span>Experience: Daily &bull; Production</span>
+              <span class="level-text">95% Mastery</span>
+            </div>
+          </div>
+
+          <!-- SQL -->
+          <div class="lang-card">
+            <div class="lang-card-top">
+              <div class="lang-icon sql-bg">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="lang-meta">
+                <div class="lang-title-row">
+                  <h3>SQL</h3>
+                  <span class="lang-badge advanced-badge">Advanced / 90%</span>
+                </div>
+                <p class="lang-specialty">MySQL &bull; Oracle SQL &bull; Joins &bull; Schema Design &bull; CRUD</p>
+              </div>
+            </div>
+            <div class="lang-bar-track">
+              <div class="lang-bar-fill" style="--level: 90%;"></div>
+            </div>
+            <div class="lang-card-bottom">
+              <span>Relational Databases</span>
+              <span class="level-text">90% Mastery</span>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="lang-card">
+            <div class="lang-card-top">
+              <div class="lang-icon js-bg">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="lang-meta">
+                <div class="lang-title-row">
+                  <h3>JavaScript</h3>
+                  <span class="lang-badge proficient-badge">Proficient / 85%</span>
+                </div>
+                <p class="lang-specialty">React.js &bull; ES6+ &bull; Async/Fetch API &bull; DOM Manipulation</p>
+              </div>
+            </div>
+            <div class="lang-bar-track">
+              <div class="lang-bar-fill" style="--level: 85%;"></div>
+            </div>
+            <div class="lang-card-bottom">
+              <span>Full-Stack Web Frontend</span>
+              <span class="level-text">85% Mastery</span>
+            </div>
+          </div>
+
+          <!-- HTML5 & CSS3 -->
+          <div class="lang-card">
+            <div class="lang-card-top">
+              <div class="lang-icon html-bg">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="lang-meta">
+                <div class="lang-title-row">
+                  <h3>HTML5 &amp; CSS3</h3>
+                  <span class="lang-badge advanced-badge">Advanced / 90%</span>
+                </div>
+                <p class="lang-specialty">Responsive UI &bull; Flexbox &bull; Grid &bull; Modern Animations</p>
+              </div>
+            </div>
+            <div class="lang-bar-track">
+              <div class="lang-bar-fill" style="--level: 90%;"></div>
+            </div>
+            <div class="lang-card-bottom">
+              <span>Clean Responsive Interfaces</span>
+              <span class="level-text">90% Mastery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: MAIN FLAGSHIP PROJECT - RAG SYSTEM -->
+    <section class="section rag-section" id="rag-project">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag star-tag"><i class="fa-solid fa-star"></i> Flagship project</span>
+          <h2 class="section-title">Offline <span class="gradient-text">RAG System</span> &amp; AI Assistant</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            An end-to-end <strong>Retrieval-Augmented Generation (RAG)</strong> platform designed to eliminate LLM hallucinations 
+            by grounding responses in custom PDF documents using vector embeddings and similarity search.
+          </p>
+        </div>
+
+        <div class="rag-showcase-card">
+          <!-- Top Overview -->
+          <div class="rag-overview-grid">
+            <div class="rag-info-block">
+              <div class="project-tag"><i class="fa-solid fa-microchip"></i> Generative AI &bull; Full-Stack</div>
+              <h3 class="rag-heading">Intelligent Document Search &amp; Knowledge Extraction</h3>
+              <p class="rag-text">
+                Traditional LLMs frequently hallucinate or lack access to internal business documents. 
+                I engineered this system to automatically ingest PDF files, parse and chunk dense technical documentation, 
+                generate semantic vector embeddings, and retrieve the exact answers via <strong>FastAPI and React</strong>.
+              </p>
+
+              <!-- Tech Highlights Pills -->
+              <div class="rag-pills-list">
+                <span class="rag-pill"><i class="fa-brands fa-python text-yellow"></i> Python 3.12</span>
+                <span class="rag-pill"><i class="fa-solid fa-bolt text-cyan"></i> FastAPI &bull; Async REST</span>
+                <span class="rag-pill"><i class="fa-solid fa-link text-purple"></i> LangChain Chains</span>
+                <span class="rag-pill"><i class="fa-solid fa-database text-green"></i> ChromaDB Vector Store</span>
+                <span class="rag-pill"><i class="fa-solid fa-robot text-orange"></i> Llama 3.2 (Ollama)</span>
+                <span class="rag-pill"><i class="fa-brands fa-react text-cyan"></i> React + Vite UI</span>
+              </div>
+
+              <div class="rag-actions-row">
+                <button class="btn btn-primary btn-md view-project-btn" data-project="rag-system">
+                  <i class="fa-solid fa-circle-info"></i> View Full Architecture
+                </button>
+                <a href="https://github.com/Krushna8285" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-md">
+                  <i class="fa-brands fa-github"></i> View GitHub Code
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Interactive RAG Simulation Box -->
+            <div class="rag-demo-box">
+              <div class="demo-box-header">
+                <div class="demo-dot-group">
+                  <span class="dot d-red"></span>
+                  <span class="dot d-yellow"></span>
+                  <span class="dot d-green"></span>
+                </div>
+                <span class="demo-header-title">RAG Assistant Live Simulation</span>
+                <span class="demo-badge">FastAPI /chat</span>
+              </div>
+
+              <!-- Message Window -->
+              <div class="demo-chat-body" id="demoChatBody">
+                <div class="demo-msg bot-msg">
+                  <div class="msg-author"><i class="fa-solid fa-robot"></i> RAG AI Assistant</div>
+                  <div class="msg-content">
+                    Hi! I am Krushna's RAG Assistant. Ask me anything about how the <strong>ChromaDB vector store</strong>, 
+                    <strong>Llama 3.2</strong>, or <strong>FastAPI backend</strong> works in this project!
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sample Questions -->
+              <div class="demo-sample-questions">
+                <span class="sample-label">Sample Questions:</span>
+                <button class="sample-btn" data-query="How does the ChromaDB vector search work?">Vector Search?</button>
+                <button class="sample-btn" data-query="What LLM model is used?">LLM Model?</button>
+                <button class="sample-btn" data-query="How does FastAPI connect with React?">FastAPI &amp; React?</button>
+              </div>
+
+              <!-- Input Bar -->
+              <form class="demo-input-bar" id="demoChatForm" onsubmit="handleDemoQuery(event)">
+                <input type="text" id="demoInput" placeholder="Ask a question about this RAG system..." autocomplete="off" />
+                <button type="submit" class="demo-submit-btn" aria-label="Send query">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Bottom: Clean Pipeline Flow Steps -->
+          <div class="rag-pipeline-bar">
+            <h4 class="pipeline-title"><i class="fa-solid fa-network-wired"></i> 6-Step Technical Architecture Pipeline</h4>
+            <div class="pipeline-steps-grid">
+              <div class="pipe-step">
+                <span class="step-badge">01</span>
+                <h5>PDF Ingestion</h5>
+                <p>PyPDFLoader extracts dense text from manuals.</p>
+              </div>
+              <div class="pipe-step">
+                <span class="step-badge">02</span>
+                <h5>Semantic Chunking</h5>
+                <p>500-token chunks with 50-token overlap.</p>
+              </div>
+              <div class="pipe-step">
+                <span class="step-badge">03</span>
+                <h5>Vector Embeddings</h5>
+                <p>High-dimensional vectors with nomic-embed-text.</p>
+              </div>
+              <div class="pipe-step">
+                <span class="step-badge">04</span>
+                <h5>ChromaDB Indexing</h5>
+                <p>Fast persistent vector database with cosine metrics.</p>
+              </div>
+              <div class="pipe-step">
+                <span class="step-badge">05</span>
+                <h5>Context Retrieval</h5>
+                <p>Fetches top-k (k=3) exact relevant passages.</p>
+              </div>
+              <div class="pipe-step">
+                <span class="step-badge">06</span>
+                <h5>Llama 3.2 &amp; React</h5>
+                <p>Hallucination-free response streamed to UI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TECH STACK & TOOLS -->
+    <section class="section tech-stack-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Toolkit</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Stack &amp; Frameworks</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Technologies and frameworks I build with on a daily basis.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <!-- Backend & Full-Stack -->
+          <div class="stack-box">
+            <div class="stack-box-header">
+              <div class="stack-icon icon-python"><i class="fa-brands fa-python"></i></div>
+              <h3>Python Full-Stack &amp; Backend</h3>
+            </div>
+            <div class="stack-tags">
+              <span class="tag-pill bold-tag">FastAPI</span>
+              <span class="tag-pill bold-tag">Flask</span>
+              <span class="tag-pill">Python 3</span>
+              <span class="tag-pill">Uvicorn</span>
+              <span class="tag-pill">RESTful APIs</span>
+              <span class="tag-pill">Pydantic</span>
+              <span class="tag-pill">AsyncIO</span>
+            </div>
+          </div>
+
+          <!-- Generative AI & Vector DB -->
+          <div class="stack-box featured-box">
+            <div class="stack-box-header">
+              <div class="stack-icon icon-ai"><i class="fa-solid fa-brain"></i></div>
+              <h3>Generative AI &amp; Vector Stores</h3>
+            </div>
+            <div class="stack-tags">
+              <span class="tag-pill bold-tag">RAG Pipelines</span>
+              <span class="tag-pill bold-tag">LangChain</span>
+              <span class="tag-pill bold-tag">ChromaDB</span>
+              <span class="tag-pill">Llama 3.2</span>
+              <span class="tag-pill">Ollama</span>
+              <span class="tag-pill">Vector Embeddings</span>
+              <span class="tag-pill">Prompt Engineering</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="stack-box">
+            <div class="stack-box-header">
+              <div class="stack-icon icon-db"><i class="fa-solid fa-database"></i></div>
+              <h3>Databases &amp; Storage</h3>
+            </div>
+            <div class="stack-tags">
+              <span class="tag-pill bold-tag">MySQL</span>
+              <span class="tag-pill bold-tag">ChromaDB (Vector)</span>
+              <span class="tag-pill">Oracle SQL</span>
+              <span class="tag-pill">Database Normalization</span>
+              <span class="tag-pill">CRUD Architecture</span>
+            </div>
+          </div>
+
+          <!-- Frontend & UI -->
+          <div class="stack-box">
+            <div class="stack-box-header">
+              <div class="stack-icon icon-react"><i class="fa-brands fa-react"></i></div>
+              <h3>Frontend &amp; Reactive UI</h3>
+            </div>
+            <div class="stack-tags">
+              <span class="tag-pill bold-tag">React.js</span>
+              <span class="tag-pill bold-tag">Vite</span>
+              <span class="tag-pill">JavaScript (ES6+)</span>
+              <span class="tag-pill">HTML5</span>
+              <span class="tag-pill">Modern CSS3</span>
+              <span class="tag-pill">Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Data Analytics -->
+          <div class="stack-box">
+            <div class="stack-box-header">
+              <div class="stack-icon icon-data"><i class="fa-solid fa-chart-pie"></i></div>
+              <h3>Data Analytics &amp; BI</h3>
+            </div>
+            <div class="stack-tags">
+              <span class="tag-pill bold-tag">Pandas</span>
+              <span class="tag-pill bold-tag">Power BI</span>
+              <span class="tag-pill">DAX</span>
+              <span class="tag-pill">NumPy</span>
+              <span class="tag-pill">Advanced Excel</span>
+              <span class="tag-pill">EDA</span>
+            </div>
+          </div>
+
+          <!-- Tools & Workflow -->
+          <div class="stack-box">
+            <div class="stack-box-header">
+              <div class="stack-icon icon-tools"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3>Developer Tools &amp; Workflow</h3>
+            </div>
+            <div class="stack-tags">
+              <span class="tag-pill bold-tag">Git &amp; GitHub</span>
+              <span class="tag-pill">VS Code</span>
+              <span class="tag-pill">Postman API</span>
+              <span class="tag-pill">Linux / CLI</span>
+              <span class="tag-pill">Virtual Environments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FEATURED PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-laptop-code"></i> Projects</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Hands-on applications built for real-world business and technical problems.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- 2. Employee Management System -->
+          <div class="project-card">
+            <div class="card-top-banner emp-bg">
+              <div class="banner-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <span class="banner-pill">Full-Stack Web</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Python &bull; Flask &bull; MySQL</span>
+              <h3 class="card-title">Enterprise Employee Management System</h3>
+              <p class="card-desc">
+                Full-stack web application featuring complete CRUD operations, user role authentication, 
+                employee profiles, attendance tracking, and MySQL relational database backend.
+              </p>
+              <div class="card-tech-chips">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-outline btn-sm view-project-btn" data-project="employee-mgmt">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Krushna8285" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Student Management System -->
+          <div class="project-card">
+            <div class="card-top-banner stu-bg">
+              <div class="banner-icon"><i class="fa-solid fa-user-graduate"></i></div>
+              <span class="banner-pill">Python OOP</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Python &bull; OOP &bull; CRUD</span>
+              <h3 class="card-title">Student Management System</h3>
+              <p class="card-desc">
+                A Python application built with object-oriented design to add, view, update, delete and search student records, 
+                with classes that keep the data and the operations cleanly separated.
+              </p>
+              <div class="card-tech-chips">
+                <span>Python</span>
+                <span>OOP</span>
+                <span>CRUD</span>
+                <span>Git</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-outline btn-sm view-project-btn" data-project="student-mgmt">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Krushna8285" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Loan Approval Prediction -->
+          <div class="project-card">
+            <div class="card-top-banner loan-bg">
+              <div class="banner-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <span class="banner-pill">Machine Learning</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Python &bull; Scikit-Learn &bull; EDA</span>
+              <h3 class="card-title">Loan Approval Predictive Intelligence</h3>
+              <p class="card-desc">
+                Engineered a predictive model in Python to classify loan eligibility across 500+ customer records. 
+                Performed statistical cleaning, feature analysis, and risk driver modeling.
+              </p>
+              <div class="card-tech-chips">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Scikit-Learn</span>
+                <span>EDA</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-outline btn-sm view-project-btn" data-project="loan-prediction">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Krushna8285" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Hospital Operations Dashboard -->
+          <div class="project-card">
+            <div class="card-top-banner bi-bg">
+              <div class="banner-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <span class="banner-pill">Business Intelligence</span>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Power BI &bull; DAX &bull; SQL</span>
+              <h3 class="card-title">Hospital Operations &amp; Resource Analytics</h3>
+              <p class="card-desc">
+                Designed two interactive Power BI dashboards visualizing operational KPIs, bed occupancy rates, 
+                patient turnaround times, and department resource allocation.
+              </p>
+              <div class="card-tech-chips">
+                <span>Power BI</span>
+                <span>DAX</span>
+                <span>Data Modeling</span>
+                <span>Excel</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-outline btn-sm view-project-btn" data-project="hospital-dashboard">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </button>
+                <a href="https://github.com/Krushna8285" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: WORK EXPERIENCE & EDUCATION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience and education</span>
+          <h2 class="section-title">Work Experience &amp; <span class="gradient-text">Education</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            My practical development experience, data analyst internship, and engineering background.
+          </p>
+        </div>
+
+        <div class="exp-edu-grid">
+          <!-- Left: Work Experience -->
+          <div class="column-card">
+            <h3 class="col-heading"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+
+            <!-- 1. Python Full Stack Developer Intern -->
+            <div class="timeline-box active-timeline">
+              <div class="timeline-header">
+                <span class="timeline-tag python-tag"><i class="fa-solid fa-certificate"></i> Full Stack Internship</span>
+                <span class="timeline-period"><i class="fa-regular fa-calendar-check"></i> Project Internship</span>
+              </div>
+              <h4 class="timeline-role">Python Full Stack Developer Intern</h4>
+              <div class="timeline-company"><i class="fa-solid fa-laptop-code"></i> <strong>Python Full-Stack &amp; AI Software Solutions</strong> &bull; Chhatrapati Sambhaji Nagar</div>
+              <ul class="timeline-list">
+                <li>Completed hands-on software development internship building full-stack web applications using <strong>Python, FastAPI, and Flask</strong>.</li>
+                <li>Architected production-ready <strong>RAG (Retrieval-Augmented Generation)</strong> pipelines integrating <strong>LangChain, ChromaDB vector store, and Llama 3.2</strong>.</li>
+                <li>Engineered responsive modern user interfaces in <strong>React.js &amp; Vite</strong> with real-time state management and REST API communication.</li>
+                <li>Designed relational database schemas in <strong>MySQL</strong> and implemented vector search indexing in <strong>ChromaDB</strong>.</li>
+              </ul>
+              <div class="timeline-pills">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Flask</span>
+                <span>React.js</span>
+                <span>LangChain</span>
+                <span>ChromaDB</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+
+            <!-- 2. Data Analyst Intern -->
+            <div class="timeline-box">
+              <div class="timeline-header">
+                <span class="timeline-tag data-tag"><i class="fa-solid fa-chart-line"></i> Data Internship</span>
+                <span class="timeline-period"><i class="fa-regular fa-calendar-check"></i> Certified Coursework</span>
+              </div>
+              <h4 class="timeline-role">Data Analyst Intern</h4>
+              <div class="timeline-company"><i class="fa-solid fa-building"></i> <strong>QSpiders</strong> &bull; Hadapsar, Pune</div>
+              <ul class="timeline-list">
+                <li>Completed intensive industry internship training covering <strong>Python (Pandas, NumPy), SQL, Power BI, and Advanced Excel</strong>.</li>
+                <li>Executed end-to-end data workflows: data cleaning, missing value handling, exploratory data analysis (EDA), and normalization.</li>
+                <li>Built interactive <strong>Power BI &amp; DAX dashboards</strong>, converting complex multi-table datasets into actionable business KPIs.</li>
+                <li>Authored SQL queries, joins, groupings, and views for analytical reporting.</li>
+              </ul>
+              <div class="timeline-pills">
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>Excel</span>
+                <span>Pandas</span>
+                <span>EDA &amp; KPIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Education -->
+          <div class="column-card">
+            <h3 class="col-heading"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+
+            <!-- B.Tech -->
+            <div class="timeline-box active-timeline">
+              <div class="timeline-header">
+                <span class="timeline-tag grad-tag">Final Year &bull; 2022 &mdash; 2026</span>
+                <span class="timeline-period">Chhatrapati Sambhaji Nagar</span>
+              </div>
+              <h4 class="timeline-role">B.Tech in Computer Science &amp; Engineering</h4>
+              <div class="timeline-company"><i class="fa-solid fa-university"></i> Shreeyash College of Engineering &amp; Technology</div>
+              <p class="timeline-sub">Affiliated to Dr. Babasaheb Ambedkar Technological University (DBATU)</p>
+              <p class="timeline-desc">
+                Core coursework in Python Programming, Data Structures, Database Management Systems (DBMS), Artificial Intelligence, and Web Technologies.
+              </p>
+            </div>
+
+            <!-- HSC -->
+            <div class="timeline-box small-box">
+              <div class="timeline-header">
+                <span class="timeline-tag">HSC (XII) &bull; 2019 &mdash; 2021</span>
+              </div>
+              <h4 class="timeline-role-sm">Higher Secondary Certificate</h4>
+              <p class="timeline-sub">D.S.M. College, Jintur, Parbhani, Maharashtra</p>
+            </div>
+
+            <!-- SSC -->
+            <div class="timeline-box small-box">
+              <div class="timeline-header">
+                <span class="timeline-tag">SSC (X) &bull; 2018 &mdash; 2019</span>
+              </div>
+              <h4 class="timeline-role-sm">Secondary School Certificate</h4>
+              <p class="timeline-sub">Jawahar Vidyalaya, Jintur, Parbhani, Maharashtra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT & CONNECT -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Get in touch</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Open for Full-Time Roles, Python Full-Stack &amp; AI Engineering positions, or freelance opportunities.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details -->
+          <div class="contact-details-box">
+            <h3>Direct Contact Details</h3>
+            <p class="contact-subtext">Feel free to message me directly on WhatsApp, email, or connect via LinkedIn.</p>
+
+            <div class="contact-cards-stack">
+              <a href="https://wa.me/919322576780?text=Hi%20Krushna,%20I%20reviewed%20your%20Python%20Full%20Stack%20portfolio!" target="_blank" rel="noopener noreferrer" class="contact-link-card wa-card">
+                <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="c-info">
+                  <span class="c-label">WhatsApp Quick Connect</span>
+                  <span class="c-value">+91 9322576780 (Fast Response)</span>
+                </div>
+                <i class="fa-solid fa-arrow-right c-arrow"></i>
+              </a>
+
+              <a href="mailto:krushnanrathod123@gmail.com" class="contact-link-card">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="c-info">
+                  <span class="c-label">Email Address</span>
+                  <span class="c-value">krushnanrathod123@gmail.com</span>
+                </div>
+                <i class="fa-solid fa-arrow-right c-arrow"></i>
+              </a>
+
+              <a href="tel:+919322576780" class="contact-link-card">
+                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="c-info">
+                  <span class="c-label">Phone Call</span>
+                  <span class="c-value">+91 9322576780</span>
+                </div>
+                <i class="fa-solid fa-arrow-right c-arrow"></i>
+              </a>
+
+              <div class="contact-link-card no-click">
+                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="c-info">
+                  <span class="c-label">Location</span>
+                  <span class="c-value">Chhatrapati Sambhaji Nagar, Maharashtra, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Buttons -->
+            <div class="contact-social-row">
+              <span>Profiles:</span>
+              <a href="https://linkedin.com/in/krushna-rathod-683a3a293" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn">
+                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+              </a>
+              <a href="https://github.com/Krushna8285" target="_blank" rel="noopener noreferrer" class="social-btn github-btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Clean Contact Form -->
+          <div class="contact-form-box">
+            <h3>Send a Message</h3>
+            <form id="contactForm" class="clean-form" onsubmit="handleContactSubmit(event)">
+              <div class="form-field">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <div class="input-container">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="name" name="name" required placeholder="e.g. Rahul Patil" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Your Email Address <span class="required">*</span></label>
+                <div class="input-container">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="email" name="email" required placeholder="e.g. rahul@example.com" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <div class="input-container">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="subject" name="subject" placeholder="e.g. Job Opportunity / Project Discussion" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="message">Message <span class="required">*</span></label>
+                <div class="input-container textarea-container">
+                  <i class="fa-solid fa-comment-dots"></i>
+                  <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- TECHNICAL CASE STUDY MODAL -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand">
+            <span class="brand-first">Krushna</span><span class="brand-dot">.</span><span class="brand-sub">dev</span>
+          </a>
+          <p class="footer-bio">
+            Python Full Stack Developer &bull; RAG AI Engineer. <br />
+            Building fast, reliable web applications and intelligent AI pipelines.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#languages">Programming Languages</a></li>
+            <li><a href="#rag-project">RAG System</a></li>
+            <li><a href="#skills">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fa-solid fa-envelope"></i> krushnanrathod123@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 9322576780</p>
+          <p><i class="fa-solid fa-location-dot"></i> Chhatrapati Sambhaji Nagar, India</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Krushna Narayan Rathod. All Rights Reserved.</p>
+        <div class="footer-credit">
+          Designed with clean, modern code.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+  <script src="effects.js"></script>
+</body>
+</html>
